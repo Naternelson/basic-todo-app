@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# React Todo Application Tutorial
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the React Todo Application tutorial! This guide will walk you through creating a basic todo application using React and TypeScript. If you're new to React or TypeScript, don't worry! This tutorial is designed to help beginners get a solid understanding of how to build React applications with type safety.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Before you start, make sure you have the following installed on your machine:
 
-### `npm start`
+- Node.js (preferably the latest LTS version)
+- A code editor (Visual Studio Code, Atom, etc.)
+- Git for cloning the repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To begin, you will need to fork and clone the repository provided for this tutorial. Make sure you are on the `student` branch before you start making changes. This branch is specifically set up for you to work on.
+```
+git clone <REPOSITORY_URL> -b student
+cd <REPOSITORY_FOLDER>
+```
+Replace <REPOSITORY_URL> and <REPOSITORY_FOLDER> with the actual URL of the repository and the folder name respectively.
 
-### `npm test`
+### Installation
+Once you have cloned the repository, navigate into the project directory and install the necessary libraries with the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```
+npm install
+```
+This command will read the package.json file and install all the dependencies required for the project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Components
+In this tutorial, you will work on three main components:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- src/components/Container: This component serves as the main wrapper for your todo application. It will hold the state of your todos and render the InputField and TodoList components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- src/components/InputField: This component is responsible for rendering an input field. Users can type their todo item here and add it to the list.
 
-### `npm run eject`
+ - src/components/TodoList: This component displays the list of todos. It will receive todos as props from the Container component and render them accordingly.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## TypeScript
+This application is written in TypeScript to provide type safety. TypeScript helps catch errors early through its type system. Here are some basics you'll encounter:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Interface: Defines the shape of objects or components props.
+- Type: Similar to interfaces, but can be used with primitives and unions.
+You'll see TypeScript in action as you work on the components.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Running the Application
+To run the application, execute the following command in your terminal:
+```
+npm start
+```
+This command will start the development server and open the application in your default web browser. You can now view and test your todo application as you develop it.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Completing the Tutorial
+Work on the components as described in the sections above. If you encounter any issues, refer back to this guide or consult the React and TypeScript documentation for more detailed explanations.
 
-## Learn More
+### Viewing the Completed Application
+If you want to see the completed version of the application for reference, you can switch to the main branch of the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+git checkout main
+```
+This branch contains the final, completed version of the todo application. Feel free to explore the code and compare it with your work on the student branch.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Happy coding!
